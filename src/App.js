@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/Home"
+import MAIN_BG from './assets/bg.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App tw-h-screen tw-w-screen tw-text-[#d6e2ff] tw-relative tw-animate-move-random tw-overflow-y-auto" style={{background:`url(${MAIN_BG})`,backgroundSize:'300%'}}>
+      <div className='tw-absolute tw-h-full tw-w-full '></div>
+      <Home className='' />
+      
     </div>
   );
 }
