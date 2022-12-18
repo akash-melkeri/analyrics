@@ -6,7 +6,7 @@ import { NotificationManager} from 'react-notifications';
 
 function MusicCard({song}) {
   function working(){
-    NotificationManager.info('Still working on it.');
+    NotificationManager.info('Still working on it.','',2000);
   }
   return (
     <div className="tw-col-span-1 tw-divide-y tw-divide-slate-500 tw-rounded-lg tw-bg-slate-400/40 tw-border tw-border-slate-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden">

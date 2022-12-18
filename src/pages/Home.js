@@ -5,9 +5,6 @@ import MusicCard from '../components/MusicCard';
 import axios from 'axios';
 import React, { useState,useCallback } from 'react';
 import { debounce } from "lodash";
-import {NotificationContainer} from 'react-notifications';
-import './Home.css';
-
 
 
 function Home() {
@@ -63,7 +60,6 @@ function Home() {
         </div>
         
       </div>
-      <NotificationContainer />
     </div>
   );
 }
