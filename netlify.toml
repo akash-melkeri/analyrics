@@ -1,5 +1,6 @@
 [build]
   functions = "functions/"
+  base = "client"
 
 [functions]
   node_bundler = "esbuild"
