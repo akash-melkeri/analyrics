@@ -1,5 +1,6 @@
-import { BiSearch,BiLike,BiDislike } from 'react-icons/bi';
-import {AiOutlineYoutube} from 'react-icons/ai'
+import { BiSearch } from 'react-icons/bi';
+// ,BiLike,BiDislike
+// import {AiOutlineYoutube} from 'react-icons/ai'
 import MusicCard from '../components/MusicCard';
 import axios from 'axios';
 import React, { useState,useCallback } from 'react';
@@ -11,6 +12,7 @@ function Home() {
   const [songs, updateSongs] = useState({});
   const [search, updateSearch] = useState("");
   const [isLoading, updateLoading] = useState("first");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handler = useCallback(debounce(searchInput, 300), []);
   function searchInput(query){
     axios.get('/api/search/',{ params: { query: query } })
