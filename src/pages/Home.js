@@ -50,12 +50,12 @@ function Home() {
             </div>
           :
             (isLoading === 'first') || (!search.length) ?
-              <div className='tw-rounded-lg tw-bg-slate-400/40 tw-border tw-border-slate-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden tw-p-4'>Search something</div>
+              <div className='tw-mx-4 tw-rounded-lg tw-bg-slate-400/40 tw-border tw-border-slate-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden tw-p-4'>Search something</div>
             :
               isLoading === 'idle'?
-                <div className='tw-rounded-lg tw-bg-red-300/40 tw-border tw-border-red-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden tw-p-4' >No songs found</div>
+                <div className='tw-mx-4 tw-rounded-lg tw-bg-red-300/40 tw-border tw-border-red-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden tw-p-4' >No songs found</div>
               :
-                <div className='tw-rounded-lg tw-bg-sky-300/40 tw-border tw-border-sky-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden tw-p-4' >Loading</div>
+                <div className='tw-mx-4 tw-rounded-lg tw-bg-sky-300/40 tw-border tw-border-sky-500 tw-backdrop-blur-xl tw-shadow tw-overflow-hidden tw-p-4' >Loading</div>
           
           }
         </div>
